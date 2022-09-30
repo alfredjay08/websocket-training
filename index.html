@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .message__container {
+        border: 1px solid #555;
+        height: 70%;
+        padding: 10px;
+      }
+
+      #form__message {
+        display: flex;
+        padding: 0.7rem 0;
+      }
+
+      .btn__submit,
+      .message {
+        padding: 0.6rem;
+      }
+
+      .message {
+        margin-right: 10px;
+        flex-grow: 1;
+      }
+    </style>
+
+    <script defer src="src/js/app.js"></script>
+  </head>
+  <body>
+    <div class="message__container"></div>
+
+    <form id="form__message">
+      <input
+        type="text"
+        class="message"
+        name="message"
+        placeholder="Send a message..."
+      />
+
+      <button type="submit" class="btn__submit">Send Message</button>
+    </form>
+  </body>
+</html>
