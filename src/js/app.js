@@ -17,12 +17,7 @@ const init = () => {
 
 const onOpen = (e) => {
   console.log(e);
-  writeMsg("CONNECTED to the Platform");
-  sendMsg(`WebSockets r the cool`);
-};
-
-const onClose = (e) => {
-  writeMsg("DISCONNECTED to the Platform");
+  writeMsg("Ready to Mirror");
 };
 
 const onMsg = (e) => {
